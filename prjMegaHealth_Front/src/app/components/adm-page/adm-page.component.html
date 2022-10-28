@@ -1,0 +1,24 @@
+<div class="main-login">
+    <div class="left-login">
+        <h1>MegaHealth <br><br> Login Administrador: </h1>
+        <a routerLink="/home"><img src="assets/farmacia.svg" class="left-login-image" alt="Farmacia animação"></a>
+    </div>
+    <form class="right-login" [formGroup]="AdmForm" (ngSubmit)="login()">
+        <div class="card-login">
+            <h1>LOGIN</h1>
+            <div class="textfield">
+                <label for="usuario">Usuário</label>
+                <input  formControlName="email" type="email" name="usuario" placeholder="E-mail">
+                <br>
+                <span class="login" *ngIf="AdmForm.controls['email'].dirty && AdmForm.hasError('required', 'email')">*Email é obrigatório</span>
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input formControlName="password" type="password" name="senha" placeholder="Senha">
+                <br>
+                <span class="login" *ngIf="AdmForm.controls['password'].dirty && AdmForm.hasError('required', 'password')">*Senha é obrigatório</span>
+            </div> 
+            <button type="submit" [disabled]="!AdmForm.valid" class="btn-login">Login</button>
+        </div>
+    </form>
+</div>   

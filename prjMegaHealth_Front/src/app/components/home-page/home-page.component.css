@@ -1,0 +1,194 @@
+* {
+  overflow: auto;
+}
+
+.main_home {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+p {
+  margin: 0;
+}
+
+.dropDown {
+  height: 50px;
+  width: 200px;
+  border: 2px solid black;
+}
+
+.cards {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+  overflow: auto;
+  margin-left: 0;
+}
+
+.card {
+  width: 150px;
+  height: 60%;
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.box {
+
+  height: 70px;
+  width: 70px;
+  padding: 0;
+}
+
+.card:hover {
+  background: #f2f2f2;
+}
+
+
+.cards .card p {
+
+  text-align: center;
+  font-size: 14px;
+}
+
+.text {
+  text-decoration: none;
+}
+
+.propagandas {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.propaganda {
+  height: 100%;
+  width: 49.5%;
+
+}
+
+img {
+  width: 100%;
+  height: 90%;
+  margin-top: 5px;
+}
+
+.infantis {
+  margin-top: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  margin-top: 80px;
+}
+
+
+
+
+.combo_desconto {
+  width: 100%;
+}
+
+.cartoes {
+  display: flex;
+  margin: 20px 50px;
+  justify-content: center;
+}
+
+.combo_card {
+  width: 230px;
+  height: 300px;
+  margin: 20px;
+  border: #c5c5c5ff solid 2px;
+}
+
+.desc {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  overflow: hidden;
+
+}
+
+.price_desc {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img-kids {
+  width: 100%;
+  height: 80%;
+  margin-top: 0;
+}
+
+.desconto {
+  font: white;
+  background-color: #04e99d;
+  height: 100%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  position: relative;
+}
+
+.price p {
+  display: block;
+}
+
+
+@media (max-width: 800px) {
+  .cards {
+    margin: 20px;
+
+  }
+
+  .card {
+    margin-left: 30px;
+  }
+
+  .combo_card {
+    margin-top: 20px;
+  }
+
+  .desc {
+    overflow: hidden;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+.price_on {
+  text-decoration: line-through;
+}
+
+.carrosel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}

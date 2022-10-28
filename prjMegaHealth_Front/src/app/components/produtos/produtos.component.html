@@ -1,0 +1,36 @@
+<div class="all">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <div class="all-product row ">
+    <div class="prod_container col-md-4 " *ngFor="let prod of produto">
+      <div class="product ">
+        <!-- <div class="discount">
+        <span>10%</span>
+      </div> -->
+        <div class="image-product">
+          <img src="/assets/pampers2.jpg" alt="" />
+        </div>
+        <div class="name-product">
+          <span>{{ prod.name }}</span>
+        </div>
+        <div class="brand">
+          <span>Johnson & Johnson</span>
+        </div>
+        <div class="quantity">
+          <span>25 Unidades</span>
+        </div>
+        <div class="price">
+          <!-- <span><s>R$89,90</s></span> -->
+          <span class="new-price">R$79,90</span>
+        </div>
+        <div class="buy">
+          <button>Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="main-login">
+    <div class="left-login">
+        <h1>MegaHealth <br> <br> Entre ou Crie uma conta: </h1>
+        <a routerLink="/home"><img src="assets/farmacia.svg" class="left-login-image" alt="Farmacia animação"></a>
+    </div>
+    <form class="right-login" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="card-login">
+            <h1>LOGIN</h1>
+            <div class="textfield">
+                <label for="usuario">Usuário</label>
+                <input  formControlName="email" type="email" name="usuario" placeholder="E-mail">
+                <br>
+                <span class="login" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required', 'email')">*Email é obrigatório</span>
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input formControlName="password" type="password" name="senha" placeholder="Senha">
+                <br>
+                <span class="login" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">*Senha é obrigatório</span>
+            </div>
+            <div class="textfield">
+                <p>Não tem uma conta? <a routerLink="/register">Clique para criar</a></p>
+            </div>
+
+            <div class="textfield">
+                <p>É Administrador?? <a routerLink="/login-Adm">Clique para fazer login</a></p>
+            </div>
+            
+            <button type="submit" [disabled]="!loginForm.valid" class="btn-login">Login</button>
+        </div>
+    </form>
+</div>   

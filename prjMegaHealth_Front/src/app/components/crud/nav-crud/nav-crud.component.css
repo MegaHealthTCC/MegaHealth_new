@@ -1,0 +1,43 @@
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.all img {
+  display: flex;
+  height: 80px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.all {
+  background: #42cc841a;
+  width: 100%;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.all span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 90px;
+}
+
+.options {
+  position: absolute;
+  left: 250px;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.options button {
+  border: none;
+
+  border-radius: 20px;
+}

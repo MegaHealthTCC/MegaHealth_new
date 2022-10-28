@@ -1,0 +1,40 @@
+
+<div class="main-login">
+    <div class="right-login">
+        <form class="card-login" [formGroup]="sinupForm" (ngSubmit)="singUp()">
+            <a routerLink="/home"><img src='assets/saude.png' class="saude-img"></a>
+            <h1>CADASTRAR:</h1>
+            <div class="textfield">
+                <label for="nome">Nome Completo</label>
+                <input formControlName="name" type="text" name="nome" placeholder="Nome Completo" maxlength="50">
+                <span  class="cadastro" *ngIf="sinupForm.controls['name'].dirty && sinupForm.hasError('required', 'name')">*Nome é obrigatório</span>
+            </div>
+            <div class="textfield">
+                <label for="email">E-mail</label>
+                <input formControlName="email" type="text" name="email" placeholder="E-mail" maxlength="100">
+                <span class="cadastro" *ngIf="sinupForm.controls['email'].dirty && sinupForm.hasError('required', 'email')">*Email é obrigatório</span>
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input formControlName="password" type="password" name="senha" placeholder="Senha" maxlength="20">
+                <span  class="cadastro" *ngIf="sinupForm.controls['password'].dirty && sinupForm.hasError('required', 'password')">*Senha é obrigatório</span>
+            </div>
+            <!-- <div class="textfield">
+                <label for="confirmar">Confirmar Senha</label>
+                <input type="password" name="confirmar" placeholder="Confirmar Senha">
+            </div> -->
+            <div class="textfield">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" formControlName="cpf" mask="000.000.000-00" placeholder="CPF"/>
+                <!-- <input formControlName="cpf" type="text" name="cpf"  mask="000.000.000-00" placeholder="CPF"> -->
+                <span  class="cadastro" *ngIf="sinupForm.controls['cpf'].dirty && sinupForm.hasError('required', 'cpf')">*CPF é obrigatório</span>
+            </div>
+            <!-- <div class="textfield">
+                <label for="date">Data de nascimento</label>
+                <input formControlName="datebirth" type="date" name="date">
+            </div>
+             -->
+            <button type="submit" [disabled]="!sinupForm.valid"  class="btn-login">CRIAR CONTA</button>
+        </form>
+    </div>
+</div>   

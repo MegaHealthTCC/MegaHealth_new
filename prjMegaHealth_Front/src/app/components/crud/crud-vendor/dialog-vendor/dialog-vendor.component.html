@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Adicionar Fornecedor</h1>
+<div mat-dialog-content>
+    <form [formGroup]="VendorForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Nome do fornecedor</mat-label>
+            <input formControlName="forn_Name" matInput placeholder="Name" maxlength="50"/>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>CNPJ do fornecedor</mat-label>
+            <!-- <input formControlName="forn_CNPJ" matInput placeholder="CNPJ" /> -->
+            <input formControlName="forn_CNPJ" matInput placeholder="CNPJ" mask="00.000.000/0000-00"/>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email do fornecedor</mat-label>
+            <input formControlName="email" matInput placeholder="Email" maxlength="100" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Telefone do fornecedor</mat-label>
+            <!-- <input formControlName="tel" matInput placeholder="Telefone" /> -->
+            <input formControlName="tel" matInput placeholder="Telefone" mask="(00) 00000-0000" prefix="+55" />
+
+        </mat-form-field>
+
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Fechar</button>
+    <button style="margin-left: 8px" mat-raised-button color="primary" (click)="AddVendor()">{{actionBtn}} </button>
+
+
+</div>
