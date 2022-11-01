@@ -394,3 +394,4 @@ C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Applicati
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\obj\Debug\net6.0\Application.genruntimeconfig.cache
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\Application.staticwebassets.runtime.json

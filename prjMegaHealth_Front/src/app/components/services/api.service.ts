@@ -1,10 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
+
+
+  public search = new BehaviorSubject<string>("")
 
   constructor(private http : HttpClient) { }
 
@@ -50,8 +54,6 @@ export class ApiService {
     return this.http.delete("http://localhost:5270/api/Vendor/" + id)
   }
 
-
-
   //pessoa
   getPeople(){
     return this.http.get<any>("http://localhost:5270/api/Pessoa/");
@@ -80,6 +82,10 @@ export class ApiService {
 
   deleteProduct(id: string){
     return this.http.delete("http://localhost:5270/api/Produto/" + id)
+  }
+
+  enviarArquivo(files: File | null){
+    return this.http.post("http://localhost:5270/api/Produto/", files)
   }
 
   //Separação

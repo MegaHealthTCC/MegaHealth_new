@@ -42,7 +42,7 @@ export class CrudCategoryComponent implements OnInit {
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
       },
-      error:(err)=>{
+      error:()=>{
         alert("Erro")
       }
     })

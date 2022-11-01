@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { Produto } from 'src/app/models/Produto';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-produtos',
@@ -11,24 +13,20 @@ import { Produto } from 'src/app/models/Produto';
 export class ProdutosComponent implements OnInit {
 
   produto: any;
+  searchKey: string = "";
+  filterCategory: any;
   baseUrl = 'http://localhost:5270/api';
   modalRef?: BsModalRef;
   desc: any;
   retorno: any;
-  btnYes = document.getElementById("btnYes");
-  yesbutton: any
-  getar: any;
-  buttonyes: any;
 
-  obj = [
-    {
-      1: "8",
 
-    }
-  ]
+
+
   constructor(
     private BsModalService: BsModalService,
     private http: HttpClient,
+    private apiService: ApiService
   ) { }
 
 
@@ -36,16 +34,24 @@ export class ProdutosComponent implements OnInit {
 
 
 
- 
+
 
   ngOnInit() {
     this.getAllProduct();
+
+    this.apiService.search.subscribe(
+      (val:any) => {
+        this.searchKey = val;
+
+      }
+    )
     // this.getById();
   }
 
   getAllProduct() {
     this.http.get(`${this.baseUrl}/Produto`).subscribe((response) => {
       this.produto = response;
+      this.filterCategory = response;
       console.log(this.produto);
       return this.produto;
     });
@@ -100,4 +106,11 @@ export class ProdutosComponent implements OnInit {
     );
   }
 
+  // filter(categoryId: string){
+  //   this.filterCategory = this.produto.filter((a:any) => {
+  //     if(a.category = categoryId || categoryId==''){
+  //       return a;
+  //     }
+  //   })
+  // }
 }

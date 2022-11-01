@@ -3,7 +3,7 @@
     <app-menu></app-menu>
   </div>
   <div class="all-product row ">
-    <div class="prod_container col-md-4 " *ngFor="let prod of produto">
+    <div class="prod_container col-md-4 " *ngFor="let prod of filterCategory | filter:searchKey:'name'">
       <div class="product ">
         <!-- <div class="discount">
         <span>10%</span>

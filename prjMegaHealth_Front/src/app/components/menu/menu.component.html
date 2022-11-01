@@ -5,7 +5,7 @@
       </li>
       <li class="sup-item search-item">
         <div class="search">
-          <input  type="text" name="texto" id="search-txt" placeholder="Pesquisar....">
+          <input  type="text" name="texto" id="search-txt" placeholder="Pesquisar...." [(ngModel)]="searchTerm" (keyup)="search($event)">
           <a href="" class="btn_container">
             <img src='assets/iconePesquisa.svg' alt="Lupa" class="lupa_img" />
           </a>

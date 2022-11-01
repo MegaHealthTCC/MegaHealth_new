@@ -14,8 +14,10 @@ import { Produto } from 'src/app/models/Produto';
 })
 export class DialogProductComponent implements OnInit {
   public categories!: Categoria[];
+  public produto!: Produto;
   productForm !: FormGroup;
   actionBtn: string = "Salvar"
+  arquivoSelecionado!: File | null;
 
   public idSelect! : string;
   constructor(private formBuilder: FormBuilder,
@@ -35,7 +37,7 @@ export class DialogProductComponent implements OnInit {
       quantity: ['', Validators.required],
       brand: ['', Validators.required],
       IdCategory: ['', Validators.required],
-      
+      urlImage: ['']
     });
     console.log(this.editData);
     if (this.editData) {
@@ -112,6 +114,20 @@ export class DialogProductComponent implements OnInit {
       )
   }
 
+  inputChanges(files: FileList){
+    this.arquivoSelecionado = files.item(0);
+    this.api.enviarArquivo(this.arquivoSelecionado)
+    .subscribe(
+      nomeArquivo => {
+        this.productForm.value.urlImage = nomeArquivo;
+        console.log(nomeArquivo);
+      },
+      e => {
+        console.log(e.error);
+      }
+    )
+
+  }
 
   imprimir(produto:Produto){
     console.log(produto)

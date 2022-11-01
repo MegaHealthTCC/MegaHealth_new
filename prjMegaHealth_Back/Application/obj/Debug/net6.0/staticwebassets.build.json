@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "Ee4K7z+QMe0erAzf/Epl3d7uS+cp6yJzWSmXR2jB4Cs=",
+  "Hash": "L/2eiphqdsPrMS22AYlDhB+8qCLVA4FvEzLLtqJwAW4=",
   "Source": "Application",
   "BasePath": "_content/Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Application\\wwwroot",
+      "Source": "Application",
+      "ContentRoot": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Application\\wwwroot\\",
+      "BasePath": "_content/Application",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

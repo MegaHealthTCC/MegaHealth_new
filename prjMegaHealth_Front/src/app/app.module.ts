@@ -43,6 +43,7 @@ import { CrudPeopleComponent } from './components/crud/crud-people/crud-people.c
 import { CrudProductComponent } from './components/crud/crud-product/crud-product.component';
 import { DialogProductComponent } from './components/crud/crud-product/dialog-product/dialog-product.component';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
+import { FilterPipe } from './shared/filter.pipe';
 
 
 
@@ -73,6 +74,7 @@ import { MatSelect, MatSelectModule } from '@angular/material/select';
     CrudPeopleComponent,
     CrudProductComponent,
     DialogProductComponent,
+    FilterPipe,
     
    
     
