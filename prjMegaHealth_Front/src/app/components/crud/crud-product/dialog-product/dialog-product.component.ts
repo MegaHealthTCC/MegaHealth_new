@@ -37,7 +37,7 @@ export class DialogProductComponent implements OnInit {
       quantity: ['', Validators.required],
       brand: ['', Validators.required],
       IdCategory: ['', Validators.required],
-      urlImage: ['']
+      urlImage: ['', Validators.required],
     });
     console.log(this.editData);
     if (this.editData) {
@@ -48,6 +48,7 @@ export class DialogProductComponent implements OnInit {
       this.productForm.controls['quantity'].setValue(this.editData.quantity);
       this.productForm.controls['brand'].setValue(this.editData.brand);
       this.productForm.controls['idCategory'].setValue(this.editData.idCategory);
+      this.productForm.controls['urlImage'].setValue(this.editData.urlImage);
       this.getProduct
     }
   }

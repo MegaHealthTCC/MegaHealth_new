@@ -330,6 +330,7 @@ C:\prjTCC\MegaHealth_Repository\prjMegaHealth_Back\Application\obj\Debug\net6.0\
 C:\prjTCC\MegaHealth_Repository\prjMegaHealth_Back\Application\obj\Debug\net6.0\ref\Application.dll
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\appsettings.json
+C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\Application.staticwebassets.runtime.json
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\Application.exe
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\Application.deps.json
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\Application.runtimeconfig.json
@@ -394,4 +395,3 @@ C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Applicati
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\obj\Debug\net6.0\Application.genruntimeconfig.cache
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\obj\Debug\net6.0\ref\Application.dll
-C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Application\bin\Debug\net6.0\Application.staticwebassets.runtime.json

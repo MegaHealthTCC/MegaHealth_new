@@ -45,7 +45,7 @@ export class ProdutosComponent implements OnInit {
 
       }
     )
-    // this.getById();
+    this.getById();
   }
 
   getAllProduct() {
