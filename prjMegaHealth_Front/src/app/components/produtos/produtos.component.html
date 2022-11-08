@@ -1,36 +1,68 @@
-<div class="all">
-  <div class="menu">
-    <app-menu></app-menu>
-  </div>
-  <div class="all-product row ">
-    <div class="prod_container col-md-4 " *ngFor="let prod of filterCategory | filter:searchKey:'name'">
-      <div class="product ">
-        <!-- <div class="discount">
-        <span>10%</span>
-      </div> -->
-        <div class="image-product">
-          <img src="/assets/pampers2.jpg" alt="" />
-        </div>
-        <div class="name-product">
-          <span>{{ prod.name }}</span>
-        </div>
-        <div class="brand">
-          <span>Johnson & Johnson</span>
-        </div>
-        <div class="quantity">
-          <span>25 Unidades</span>
-        </div>
-        <div class="price">
-          <!-- <span><s>R$89,90</s></span> -->
-          <span class="new-price">R$79,90</span>
-        </div>
-        <div class="buy">
-          <button>Comprar</button>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<app-menu></app-menu>
+
+<div class="card-top container-fluid">
+
+
+  <div class="container d-flex">
+    <div class="item">
+      <a (click)="filter('')">
+        <img src="assets\produtos.png" alt="">
+        <h4>Todos os Produtos</h4>
+      </a>
+    </div>
+    <div class="container d-flex">
+      <div class="item">
+        <a (click)="filter('Ofertas')">
+          <img src="assets/ofertas_2.png" alt="">
+          <h4>Ofertas</h4>
+        </a>
+      </div>
+      <div class="container d-flex">
+        <div class="item">
+          <a (click)="filter('Genericos')">
+            <img src="assets/remedios.png" alt="">
+            <h4>Genéricos</h4>
+          </a>
         </div>
       </div>
     </div>
+    <div class="search-box">
+      <button class="btn-search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+      <input type="text" class="input-search" [(ngModel)]="searchTerm" (keyup)="search($event)">
+    </div>
   </div>
-  <div class="footer">
-    <app-footer></app-footer>
+</div>
+
+<div class="all-product row ">
+  <div class="prod_container col-md-4 " *ngFor="let prod of filterCategory | filter:searchKey:'name'">
+    <div class="product ">
+
+      <div class="image-product">
+        <img src="/assets/cabelos.png" alt="" />
+      </div>
+      <div class="name-product">
+        <span>{{ prod.name }}</span>
+      </div>
+      <div class="brand">
+        <span>{{ prod.brand }}</span>
+      </div>
+      <div class="quantity">
+        <span>{{ prod.quantity }} Unidades</span>
+      </div>
+      <div class="price">
+        <!-- <span><s>R$89,90</s></span> -->
+        <span class="new-price">R$ {{ prod.price }}</span>
+      </div>
+      <div class="buy">
+        <button>Comprar</button>
+      </div>
+    </div>
   </div>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
 </div>

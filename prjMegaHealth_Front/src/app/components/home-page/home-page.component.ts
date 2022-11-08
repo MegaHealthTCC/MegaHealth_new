@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-
+  produto: any;
+  filterCategory: any;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  
+  filter(categoryId: string) {
+    this.filterCategory = this.produto.filter((a: any) => {
+      if (a.category = categoryId || categoryId == '') {
+        return a;
+      }
+    })
   }
 
 }

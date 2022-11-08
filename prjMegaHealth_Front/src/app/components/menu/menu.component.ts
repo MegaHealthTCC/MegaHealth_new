@@ -1,7 +1,8 @@
-import { HttpClientModule } from '@angular/common/http';
+ import { HttpClientModule } from '@angular/common/http';
 import { MenuService } from './menu.service';
 import { Component, OnInit } from '@angular/core';
 import { Categoria } from 'src/app/models/Categoria';
+import { Produto } from 'src/app/models/Produto';
 import { ApiService } from '../services/api.service';
 
 
@@ -13,6 +14,7 @@ import { ApiService } from '../services/api.service';
 export class MenuComponent implements OnInit {
 
   public categoria!: Categoria[]
+  public produto!: Produto[]
   public searchTerm : string = ''
   constructor(
     private menuService: MenuService,
@@ -38,6 +40,6 @@ export class MenuComponent implements OnInit {
   }
 
   categoriaSelect(categoria:Categoria){
-
+ 
   }
 }

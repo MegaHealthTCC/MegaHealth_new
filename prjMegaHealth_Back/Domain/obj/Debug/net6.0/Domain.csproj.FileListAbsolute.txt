@@ -70,3 +70,15 @@ C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Domain\ob
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Domain\obj\Debug\net6.0\refint\Domain.dll
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.pdb
 C:\Users\pedro\Documents\MegaHealth_Repository-main\prjMegaHealth_Back\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\bin\Debug\net6.0\Domain.dll
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\bin\Debug\net6.0\Domain.pdb
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.dll
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\Domain.pdb
+C:\prjTCC8\MegaHealth_new\prjMegaHealth_Back\Domain\obj\Debug\net6.0\ref\Domain.dll

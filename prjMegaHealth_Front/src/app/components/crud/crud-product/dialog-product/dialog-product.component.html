@@ -78,7 +78,7 @@
         type="number"
         formControlName="quantity"
         matInput
-        placeholder="Qualtidade"
+        placeholder="Quantidade"
       />
     </mat-form-field>
     <mat-form-field>
@@ -96,7 +96,7 @@
     <mat-form-field appearance="fill">
       <mat-label>Categoria</mat-label>
       <mat-select name="food" formControlName="IdCategory">
-        <mat-option *ngFor="let cat of categories" [value]="cat.id">
+        <mat-option *ngFor="let cat of categories" [value]="cat.description">
           {{ cat.description }}
         </mat-option>
       </mat-select>

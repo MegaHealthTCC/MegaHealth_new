@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj": {}
+    "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Domain\\Domain.csproj": {
+    "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Domain\\obj\\",
+        "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\gussi\\.nuget\\packages\\",
+        "outputPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gussi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -53,21 +53,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj": {
+    "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj",
+        "projectUniqueName": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj",
         "projectName": "Infra.Data",
-        "projectPath": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Infra.Data\\obj\\",
+        "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\gussi\\.nuget\\packages\\",
+        "outputPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gussi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -79,8 +79,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Domain\\Domain.csproj"
+              "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj"
               }
             }
           }
@@ -140,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

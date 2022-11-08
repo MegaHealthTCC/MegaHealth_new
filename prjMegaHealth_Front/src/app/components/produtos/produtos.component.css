@@ -11,6 +11,18 @@
 .all-product{
   width: 100%;
 }
+.item {
+  margin: 0px 15px;
+  text-align: center;
+  
+}
+
+
+
+
+.item img {
+  width: 64px;
+}
 
 .product {
   background: rgb(248, 248, 248);

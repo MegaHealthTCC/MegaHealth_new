@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L/2eiphqdsPrMS22AYlDhB+8qCLVA4FvEzLLtqJwAW4=",
+  "Hash": "5Mcfje/TwZfEdZKx1Ybq0VqufGHImEK1HQcvAZ9haX0=",
   "Source": "Application",
   "BasePath": "_content/Application",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Application\\wwwroot",
       "Source": "Application",
-      "ContentRoot": "C:\\Users\\pedro\\Documents\\MegaHealth_Repository-main\\prjMegaHealth_Back\\Application\\wwwroot\\",
+      "ContentRoot": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Application\\wwwroot\\",
       "BasePath": "_content/Application",
       "Pattern": "**"
     }
