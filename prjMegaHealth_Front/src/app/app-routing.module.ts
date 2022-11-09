@@ -16,6 +16,8 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { AdmPageComponent } from './components/adm-page/adm-page.component';
 import { CrudPeopleComponent } from './components/crud/crud-people/crud-people.component';
 import { CrudProductComponent } from './components/crud/crud-product/crud-product.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
+
 
 
 
@@ -34,6 +36,8 @@ const routes: Routes = [
   { path: 'login-Adm', component: AdmPageComponent},
   { path: 'pessoa', component: CrudPeopleComponent},
   { path: 'produto', component: CrudProductComponent},
+  { path: 'cart', component: CarrinhoComponent},
+
 
 
 

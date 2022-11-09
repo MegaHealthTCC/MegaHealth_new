@@ -44,6 +44,8 @@ import { CrudProductComponent } from './components/crud/crud-product/crud-produc
 import { DialogProductComponent } from './components/crud/crud-product/dialog-product/dialog-product.component';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 import { FilterPipe } from './shared/filter.pipe';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
+
 
 
 
@@ -75,6 +77,8 @@ import { FilterPipe } from './shared/filter.pipe';
     CrudProductComponent,
     DialogProductComponent,
     FilterPipe,
+    CarrinhoComponent,
+   
     
    
     

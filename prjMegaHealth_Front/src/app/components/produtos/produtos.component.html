@@ -38,27 +38,27 @@
 </div>
 
 <div class="all-product row ">
-  <div class="prod_container col-md-4 " *ngFor="let prod of filterCategory | filter:searchKey:'name'">
+  <div class="prod_container col-md-4 " *ngFor="let produto of filterCategory | filter:searchKey:'name'">
     <div class="product ">
 
       <div class="image-product">
-        <img src="/assets/cabelos.png" alt="" />
+        <img src="{{produto.urlImage}}"/>
       </div>
       <div class="name-product">
-        <span>{{ prod.name }}</span>
+        <span>{{ produto.name }}</span>
       </div>
       <div class="brand">
-        <span>{{ prod.brand }}</span>
+        <span>{{ produto.brand }}</span>
       </div>
       <div class="quantity">
-        <span>{{ prod.quantity }} Unidades</span>
+        <span>{{ produto.quantity }} Unidades</span>
       </div>
       <div class="price">
         <!-- <span><s>R$89,90</s></span> -->
-        <span class="new-price">R$ {{ prod.price }}</span>
+        <span class="new-price">R$ {{ produto.price }}</span>
       </div>
       <div class="buy">
-        <button>Comprar</button>
+        <button (click)=" addCart(produto)">Comprar</button>
       </div>
     </div>
   </div>

@@ -1,37 +1,40 @@
 <nav class="sup-nav">
-    <ul class="sup-menu menu">
-      <li class="sup-item logo_container">
-        <a routerLink="/home"><img class="logo" src='assets/logo_1.png' alt=""></a>
-      </li>
-      <li class="sup-item search-item">
-        <div class="search">
-          <input  type="text" name="texto" id="search-txt" placeholder="Pesquisar...." [(ngModel)]="searchTerm" (keyup)="search($event)">
-          <a href="" class="btn_container">
-            <img src='assets/iconePesquisa.svg' alt="Lupa" class="lupa_img" />
-          </a>
+  <ul class="sup-menu menu">
+    <li class="sup-item logo_container">
+      <a routerLink="/home"><img class="logo" src='assets/logo_1.png' alt=""></a>
+    </li>
+    <!-- <li class="sup-item search-item">
+      <div class="search">
+        <input type="text" name="texto" id="search-txt" placeholder="Pesquisar...." [(ngModel)]="searchTerm"
+          (keyup)="search($event)">
+        <a href="" class="btn_container">
+          <img src='assets/iconePesquisa.svg' alt="Lupa" class="lupa_img" />
+        </a>
+      </div>
+    </li> -->
+    <li class="login">
+      <div class="container">
+
+        <div class="container2">
+          <img routerLink="/cart" src='assets/carrinho 1.png' alt="">
         </div>
-      </li>
-      <li class="sup-item login">
-        <div class="container">
-          <div class="">
-              <img class="icone_pessoa" src='assets/icone_pessoa.svg' alt="">
-          </div>
+        <img class="icone_pessoa" src='assets/icone_pessoa.svg' alt="">
 
-          <div class="read">
-            <p>Fazer <a routerLink="/login">login</a> ou<br><a routerLink="/register">Cadastrar-se</a></p>
-          </div>
+
+        <div class="read">
+          <p>Fazer <a routerLink="/login">login</a> ou<br><a routerLink="/register">Cadastrar-se</a></p>
         </div>
-      </li>
-    </ul>
-  </nav>
-  <nav class="menus">
+      </div>
+    </li>
+  </ul>
+</nav>
+<nav class="menus">
 
-      <ul class="menu little-menu">
-        <li class="menu-li">
-          <div class="dropdown">
-            <span routerLink="/produtos">Produtos</span>
-          </div>
-        </li>
-      </ul>
-  </nav>
-
+  <ul class="menu little-menu">
+    <li class="menu-li">
+      <div class="dropdown">
+        <span routerLink="/produtos">Produtos</span>
+      </div>
+    </li>
+  </ul>
+</nav>

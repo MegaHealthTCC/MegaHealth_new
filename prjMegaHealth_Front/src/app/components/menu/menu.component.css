@@ -8,6 +8,19 @@ body {
   font-size: 12px;
 }
 
+.cart img {
+  position: absolute;
+  right: 130px;
+  height: 100px;
+  width: 130px;
+  bottom: 518px;
+}
+
+.container2 img {
+  height: 100px;
+  width: 130px;
+}
+
 .menu {
   width: 100%;
   display: flex;
@@ -59,6 +72,8 @@ body {
 
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icone_pessoa {
