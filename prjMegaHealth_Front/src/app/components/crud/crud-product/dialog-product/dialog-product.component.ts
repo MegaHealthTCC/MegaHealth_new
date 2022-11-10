@@ -37,7 +37,7 @@ export class DialogProductComponent implements OnInit {
       quantity: ['', Validators.required],
       brand: ['', Validators.required],
       IdCategory: ['', Validators.required],
-      urlImage: ['', Validators.required],
+      urlImage: [''],
     });
     console.log(this.editData);
     if (this.editData) {
@@ -116,11 +116,20 @@ export class DialogProductComponent implements OnInit {
   }
 
   inputChanges(files: FileList){
+    console.log(files);
+    console.log(files.item(0))
+
+    console.log(files.item(0)?.name)
+    
+    
+    
     this.arquivoSelecionado = files.item(0);
     this.api.enviarArquivo(this.arquivoSelecionado)
     .subscribe(
       nomeArquivo => {
+
         this.productForm.value.urlImage = nomeArquivo;
+        console.log('nomeArquivo');
         console.log(nomeArquivo);
       },
       e => {

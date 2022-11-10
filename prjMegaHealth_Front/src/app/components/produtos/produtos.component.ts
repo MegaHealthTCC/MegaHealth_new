@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { CarrinhoComponent } from '../carrinho/carrinho.component';
 import { CarrinhoService } from '../services/carrinho.service';
 
 @Component({
@@ -15,9 +17,9 @@ export class ProdutosComponent implements OnInit {
   searchKey: string = "";
   public searchTerm: string = '';
   public searchT = new BehaviorSubject<string>("");
-  
+  public carrinhoCompras!: CarrinhoComponent
 
-  constructor(private http: HttpClient, private carrinhoService: CarrinhoService) { }
+  constructor(private http: HttpClient, private carrinhoService: CarrinhoService, private router: Router) { }
 
   ngOnInit(): void {
     this.http.get("http://localhost:5270/api/Produto")
@@ -31,14 +33,18 @@ export class ProdutosComponent implements OnInit {
           if (a.idCategory === "Ofertas") {
             a.idCategory === "Ofertas"
           }
-          // Object.assign(a,{quantity,total:a.price})
+          Object.assign(a,{quantitys: 1,total:a.price})
         });
+       
         console.log(produtos);
       })
 
     this.searchT.subscribe((val: any) => {
       this.searchKey = val;
     })
+
+    this.carrinhoCompras = new CarrinhoComponent();
+    
   }
 
   search(event: any) {
@@ -60,4 +66,9 @@ export class ProdutosComponent implements OnInit {
       })
   }
 
+
+  public comprar(){
+    this.carrinhoCompras.adicionar(this.produtos);
+    this.router.navigate(["/cart"])
+  }
 }

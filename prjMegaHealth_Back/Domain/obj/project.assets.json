@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj",
+      "projectPath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\gussi\\.nuget\\packages\\",
-      "outputPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\obj\\",
+      "outputPath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gussi\\AppData\\Roaming\\NuGet\\NuGet.Config"

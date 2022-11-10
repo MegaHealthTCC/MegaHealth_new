@@ -1829,11 +1829,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Application\\Application.csproj",
+      "projectPath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\gussi\\.nuget\\packages\\",
-      "outputPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Application\\obj\\",
+      "outputPath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gussi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1848,14 +1848,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj"
+            "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Domain\\Domain.csproj"
             },
-            "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj": {
-              "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj"
+            "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj": {
+              "projectPath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Infra.Data\\Infra.Data.csproj"
             },
-            "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Service\\Service.csproj": {
-              "projectPath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Service\\Service.csproj"
+            "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Service\\Service.csproj": {
+              "projectPath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Service\\Service.csproj"
             }
           }
         }

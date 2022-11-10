@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UW3iGm7McBBYZlxw2dS2ReTdcrE20nUxfyWfiBYsu2aIo+adWgEs/TPqTxvedLGRhZl73YTwkHGsQmmhK2OvZw==",
+  "dgSpecHash": "S5n01No7eTdGez81a53BQOEoriDvCJRKzJL8PzNPEpHCWNbVwAd9spaDGtOupJ0UJVaWuZUk3Zf/BdERWpHD/A==",
   "success": true,
-  "projectFilePath": "C:\\prjTCC8\\MegaHealth_new\\prjMegaHealth_Back\\Application\\Application.csproj",
+  "projectFilePath": "C:\\prjTCC9\\MegaHealth_new\\prjMegaHealth_Back\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gussi\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\gussi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

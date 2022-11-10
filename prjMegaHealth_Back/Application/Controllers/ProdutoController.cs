@@ -63,6 +63,7 @@ namespace Application.Controllers
         public async Task<IActionResult> Post(ProdutoModel produto)
         {
             var product1 = this.Mapper.Map<Produto>(produto);
+            product1.UrlImage = "assets/" + Path.GetFileName(produto.UrlImage);
 
             this.Service.Add(product1);
 
@@ -97,6 +98,7 @@ namespace Application.Controllers
 
         private string GerarNovoNomeArquivo(string nomeArquivo, string extensao)
         {
+
             var arrayNomeCompacto = Path.GetFileNameWithoutExtension(nomeArquivo).Take(10).ToArray();
             var novoNomeArquivo = new string(arrayNomeCompacto).Replace(" ", "-");
             novoNomeArquivo = $"{novoNomeArquivo}_{DateTime.Now.Year}{DateTime.Now.Month}{DateTime.Now.Day}{DateTime.Now.Hour}{DateTime.Now.Minute}{DateTime.Now.Second}.{extensao}";

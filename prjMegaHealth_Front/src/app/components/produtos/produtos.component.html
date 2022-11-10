@@ -2,37 +2,29 @@
 
 <app-menu></app-menu>
 
-<div class="card-top container-fluid">
-
-
-  <div class="container d-flex">
+<div class="all">
+  <div class="category">
     <div class="item">
       <a (click)="filter('')">
         <img src="assets\produtos.png" alt="">
         <h4>Todos os Produtos</h4>
       </a>
     </div>
-    <div class="container d-flex">
-      <div class="item">
-        <a (click)="filter('Ofertas')">
-          <img src="assets/ofertas_2.png" alt="">
-          <h4>Ofertas</h4>
-        </a>
-      </div>
-      <div class="container d-flex">
-        <div class="item">
-          <a (click)="filter('Genericos')">
-            <img src="assets/remedios.png" alt="">
-            <h4>Genéricos</h4>
-          </a>
-        </div>
-      </div>
+    <div class="item">
+      <a (click)="filter('Ofertas')">
+        <img src="assets/ofertas_2.png" alt="">
+        <h4>Ofertas</h4>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('Genericos')">
+        <img src="assets/remedios.png" alt="">
+        <h4>Genéricos</h4>
+      </a>
     </div>
     <div class="search-box">
-      <button class="btn-search">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </button>
-      <input type="text" class="input-search" [(ngModel)]="searchTerm" (keyup)="search($event)">
+      <input type="text" name="" id="" placeholder="O que está procurando?" [(ngModel)]="searchTerm" (keyup)="search($event)">
+      <i class="fa fa-search" aria-hidden="true"></i>
     </div>
   </div>
 </div>
@@ -58,7 +50,7 @@
         <span class="new-price">R$ {{ produto.price }}</span>
       </div>
       <div class="buy">
-        <button (click)=" addCart(produto)">Comprar</button>
+        <button (click)=" comprar()">Comprar</button>
       </div>
     </div>
   </div>

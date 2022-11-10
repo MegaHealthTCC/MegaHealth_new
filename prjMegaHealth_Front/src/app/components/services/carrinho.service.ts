@@ -27,7 +27,7 @@ export class CarrinhoService {
     console.log(this.cartItemList);
   }
 
-  getPrecoTotal() : number{
+  getPrecoTotal(): number{
     let totalGeral = 0;
     this.cartItemList.map((a:any)=>{
       totalGeral += a.total;
