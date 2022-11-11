@@ -33,7 +33,7 @@ export class ProdutosComponent implements OnInit {
           if (a.idCategory === "Ofertas") {
             a.idCategory === "Ofertas"
           }
-          Object.assign(a,{quantitys: 1,total:a.price})
+         Object.assign(a,{total:a.price})
         });
        
         console.log(produtos);
@@ -43,7 +43,7 @@ export class ProdutosComponent implements OnInit {
       this.searchKey = val;
     })
 
-    this.carrinhoCompras = new CarrinhoComponent();
+    // this.carrinhoCompras = new CarrinhoComponent();
     
   }
 
@@ -67,8 +67,8 @@ export class ProdutosComponent implements OnInit {
   }
 
 
-  public comprar(){
-    this.carrinhoCompras.adicionar(this.produtos);
-    this.router.navigate(["/cart"])
-  }
+  // public comprar(){
+  //   this.carrinhoCompras.adicionar(this.produtos);
+  //   this.router.navigate(["/cart"])
+  // }
 }

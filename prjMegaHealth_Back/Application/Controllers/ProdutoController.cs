@@ -174,8 +174,10 @@ namespace Application.Controllers
 
             if (entity == null) return NotFound();
 
+            model.UrlImage = "assets/" + Path.GetFileName(model.UrlImage);
             this.Mapper.Map(model, entity);
             this.Service.Update(entity);
+            
 
             if (await this.Service.SaveChangesAsync())
                 return Created($"api/Produto/{model.Id}", this.Mapper.Map<ProdutoModel>(entity));
